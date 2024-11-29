@@ -1,0 +1,30 @@
+<div class="user">
+  <img [src]="image" alt="Foto-user" />
+  <div class="user-main">
+    <div>
+      <p id="user-name">{{ name }}</p>
+      <div class="user-informations">
+        @if (gender === 'male') {
+        <ng-icon name="bootstrapGenderMale" />
+        } @else {
+        <ng-icon name="bootstrapGenderFemale" />
+        }
+        <p id="user-gender">{{ gender }}</p>
+        <div id="user-email">
+          <ng-icon name="bootstrapEnvelopeFill" />
+          <p>{{ email }}</p>
+        </div>
+        <div id="user-phone">
+          <ng-icon name="bootstrapTelephoneFill" />
+          <p>{{ phone }}</p>
+        </div>
+      </div>
+    </div>
+    <div class="user-actions">
+      <span id="user-status">Aguardando</span>
+      <ng-icon name="bootstrapEyeFill" id="eyes" />
+      <ng-icon name="bootstrapPencilFill" id="pencil" />
+      <ng-icon name="bootstrapTrash" id="trash" />
+    </div>
+  </div>
+</div>

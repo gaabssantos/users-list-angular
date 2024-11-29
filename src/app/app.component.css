@@ -1,0 +1,19 @@
+.container {
+    width: 80%;
+    margin: 2rem auto;
+}
+
+.container h2 {
+    font-size: 1rem;
+}
+
+.header-table {
+    display: flex;
+    gap: 3rem;
+    border-bottom: 1px solid var(--border-color);
+    padding: 1rem;
+}
+
+.header-table h2:first-child {
+    width: 71%;
+}

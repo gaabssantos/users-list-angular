@@ -1,0 +1,80 @@
+.user {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.user img {
+  width: 70px;
+  height: 70px;
+}
+
+.user-main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.user-informations {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: var(--gray);
+}
+
+.user-informations div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-informations p {
+  font-size: 0.8rem;
+}
+
+#user-name {
+  font-size: 1.3rem;
+  color: var(--user-color);
+}
+
+#user-gender {
+  text-transform: capitalize;
+}
+
+#user-status {
+  width: 37%;
+  text-align: right;
+  margin-right: 1.5rem;
+}
+
+.user-actions {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.user-actions ng-icon {
+  cursor: pointer;
+  opacity: 0.7;
+  font-size: 1.1rem;
+  margin-right: 0.5rem;
+}
+
+.user-actions ng-icon:hover {
+  opacity: 1;
+}
+
+.user-actions #eyes {
+  color: var(--eyes-color);
+}
+
+.user-actions #pencil {
+  color: var(--pencil-color);
+}
+
+.user-actions #trash {
+  color: var(--trash-color);
+}
