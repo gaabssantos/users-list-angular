@@ -4,7 +4,9 @@
     <h2>Status</h2>
     <h2>Ações</h2>
   </div>
-  @for (item of usersMock.users; track item) {
+  @if (loading() === true) {
+  <p>Carregando...</p>
+  } @for (item of usersMock.users; track item) {
   <app-user
     name="{{ item.firstName }}"
     image="{{ item.image }}"
